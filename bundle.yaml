@@ -1,5 +1,5 @@
 images:
 # operator-bundle
 - name: IMAGE_OPERATOR_BUNDLE
-  value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-operator-bundle@sha256:06c5772356d620e6ada9c13a07c115a67d6c4288552f02aeeb40560dd5ae2e15
+  value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-operator-bundle@sha256:9c314429bee2875a79116fb3a5f73a18b285ef80606b3bdb4dd7ed432cca3d6a
   
