@@ -9486,7 +9486,7 @@
     "schema": "olm.bundle",
     "name": "openshift-pipelines-operator-rh.v1.15.5",
     "package": "openshift-pipelines-operator-rh",
-    "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:a3aae3e8e90666e2e5953bf7e2258ea132eac9e33a3f718ad38033682f260564",
+    "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:028af68203ef8d7b787994131caaa1661876646c8c763cd90b20ae7a5579934f",
     "properties": [
         {
             "type": "olm.gvk",
@@ -10150,7 +10150,7 @@
         },
         {
             "name": "",
-            "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:a3aae3e8e90666e2e5953bf7e2258ea132eac9e33a3f718ad38033682f260564"
+            "image": "quay.io/openshift-pipeline/pipelines-operator-bundle@sha256:028af68203ef8d7b787994131caaa1661876646c8c763cd90b20ae7a5579934f"
         },
         {
             "name": "IMAGE_PIPELINES_PROXY",
