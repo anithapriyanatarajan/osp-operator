@@ -9,6 +9,8 @@ on:
      - .github/workflows/update-sources.yaml
 jobs:
   update-sources:
+    # This line prevents the job from running if CodeFreeze is true
+    if: true
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -56,6 +58,12 @@ jobs:
         git checkout HEAD .
         popd
     
+    - name: Generate patches
+      run: |
+        pushd upstream
+        sed -i "s/go 1.25.10/go 1.25.9/g" go.mod
+        
+        popd
     - name: Commit new changes
       run: |
         
@@ -85,7 +93,7 @@ jobs:
         fi
 
         git commit -F- <<EOF
-        [bot] Update release-v1.23.x from tektoncd/operator to ${NEW_COMMIT}
+        [bot] Update release-v1.23.x from tektoncd/operator:release-v0.79.x to ${NEW_COMMIT}
 
             $ git diff --stat ${NEW_COMMIT}..${OLD_COMMIT}
         $(cat /tmp/diff.txt | sed 's/^/    /' | head -c 55555)
@@ -100,7 +108,7 @@ jobs:
           gh pr create -B release-v1.23.x -H actions/update/sources-release-v1.23.x --label=automated --label=upstream --fill
         else
           echo "a PR already exists, editing..."
-          gh pr edit --title "[bot] Update release-v1.23.x from tektoncd/operator to ${NEW_COMMIT}" --body "$(cat /tmp/diff.txt | sed 's/^/    /' | head -c 55555)"
+          gh pr edit --title "[bot] Update release-v1.23.x from tektoncd/operator:release-v0.79.x to ${NEW_COMMIT}" --body "$(cat /tmp/diff.txt | sed 's/^/    /' | head -c 55555)"
         fi
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

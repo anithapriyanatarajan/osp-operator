@@ -13,7 +13,7 @@ images:
   - name: IMAGE_PIPELINES_WEBHOOK
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-webhook-rhel9@sha256:027ed3ed0fe46b82d2424ba785144ccb64346e9e217b201729548bd6bbc8c420
   - name: IMAGE_PIPELINES_CONTROLLER # should be RESOLVERS instead
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-resolvers-rhel9@sha256:6a0977a2c1bff6eccccb6c0f43346e94c15e5a8f4efa04c86c07b16b034cadbe
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-resolvers-rhel9@sha256:e1a96fe0513cdc9e3eb018dae65ba741c28f7b6e1244f55f5d7e5a37e5774c4b
   - name: IMAGE_PIPELINES_TEKTON_EVENTS_CONTROLLER
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-events-rhel9@sha256:7e3e0fcb07a3659beb13d9483b554417fd656d4efe505b5103e45b35772c7c79
   - name: IMAGE_PIPELINES_ARG__ENTRYPOINT_IMAGE
@@ -79,9 +79,9 @@ images:
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-pipelines-as-code-cli-rhel9@sha256:a3e55960ab6e223fffc6a1a862cbc1c1535afb631de908c32dc9e79f152fea2f
   # operator
   - name: OPENSHIFT_PIPELINES_OPERATOR_LIFECYCLE
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-rhel9-operator@sha256:5a54cef474c3decccea0683aaefbb973a677914d401d817e6fe49a9bdac9a9bd
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-rhel9-operator@sha256:87f79dd343f74ffaddb84d24b26f45ae3fc811844e10ef03dde63b4aebf68c7c
   - name: OPENSHIFT_PIPELINES_OPERATOR_CLUSTER_OPERATIONS
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-rhel9-operator@sha256:5a54cef474c3decccea0683aaefbb973a677914d401d817e6fe49a9bdac9a9bd
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-rhel9-operator@sha256:87f79dd343f74ffaddb84d24b26f45ae3fc811844e10ef03dde63b4aebf68c7c
   - name: IMAGE_PIPELINES_PROXY
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-operator-proxy-rhel9@sha256:b71e54248e78fe3f32a7ed0cd9168762afe563678670d312f44358c3eca45ca6
   - name: TEKTON_OPERATOR_WEBHOOK
@@ -106,7 +106,7 @@ images:
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-git-init-rhel9@sha256:157842f9c63364060c646894c83fc922d2433dc15ea61d32f1d836c98b99f41b
   # console-plugin
   - name: IMAGE_PIPELINES_CONSOLE_PLUGIN
-    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-console-plugin-rhel9@sha256:4ab464d77c724f24fa867eb2dee9e323deb27b8d739a767edbcd9568278a59da
+    value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-console-plugin-rhel9@sha256:193e7e5d42b8a3cf197d0c202c8a0a31eb33c5b560926ccea260ab03f740ce93
   - name: IMAGE_PIPELINES_CONSOLE_PLUGIN_LEGACY
     value: quay.io/redhat-user-workloads/tekton-ecosystem-tenant/pipelines-console-plugin-pf5-rhel9@sha256:5e88fdfb037439f79bbd66a220df1b23f4a50b38e91b4e56d80f47a4a598c566
   # OPC
